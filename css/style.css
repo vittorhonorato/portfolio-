@@ -669,7 +669,6 @@ header.sticky{
         position: relative;
         height: 87vh;
         width: 100%;
-        background-image: url(../img/background.jpg);
         background-size: cover;
         background-position: center;
         display: flex;
@@ -726,5 +725,54 @@ header.sticky{
     .link:hover{
         transition: .5s;
         color: #e4ab32;
+    }
+}
+
+/* Estilos padrão */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-div {
+    width: 50%;
+}
+
+.home-text {
+    text-align: center;
+}
+
+.home-img img {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto;
+}
+
+/* Responsividade para largura máxima de 1480px */
+@media screen and (max-width: 1480px) {
+    .home-div {
+        width: 60%;
+    }
+}
+
+/* Responsividade para largura máxima de 1100px */
+@media screen and (max-width: 1100px) {
+    .home-div {
+        width: 70%;
+    }
+}
+
+/* Responsividade para largura máxima de 920px */
+@media screen and (max-width: 920px) {
+    .home-div {
+        width: 80%;
+    }
+}
+
+/* Responsividade para largura máxima de 800px */
+@media screen and (max-width: 800px) {
+    .home-div {
+        width: 90%;
     }
 }
